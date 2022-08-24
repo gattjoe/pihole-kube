@@ -54,8 +54,6 @@ spec:
               mountPath: "/etc/pihole"
             - name: pihole-local-dnsmasq-volume
               mountPath: "/etc/dnsmasq.d"
-          securityContext:
-            allowPrivilegeEscalation: false
       volumes:
         - name: pihole-local-etc-volume
           persistentVolumeClaim:
