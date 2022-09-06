@@ -49,6 +49,8 @@ spec:
               value: "f"
             - name: QUERY_LOGGING
               value: "true"
+            - name: FTLCONF_REPLY_ADDR4
+              value: "192.168.3.2"
           volumeMounts:
             - name: pihole-local-etc-volume
               mountPath: "/etc/pihole"
